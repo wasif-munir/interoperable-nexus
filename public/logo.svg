@@ -1,0 +1,16 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <path d="M16.5 35C23.9558 35 30 28.9558 30 21.5C30 14.0442 23.9558 8 16.5 8C9.04416 8 3 14.0442 3 21.5C3 28.9558 9.04416 35 16.5 35Z" stroke="#0c8aec" stroke-width="3"/>
+  <path d="M44 8H80" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 21H75" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M44 35H70" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M90 8L105 35" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M120 8L105 35" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M125 8H142C147.523 8 152 12.4772 152 18V18C152 23.5228 147.523 28 142 28H125V8Z" stroke="#0c8aec" stroke-width="3"/>
+  <path d="M125 28V35" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M160 8H170C175.523 8 180 12.4772 180 18V25C180 30.5228 175.523 35 170 35H160V8Z" stroke="#0c8aec" stroke-width="3"/>
+  <path d="M197 8V35" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M187 8H197" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M187 21H197" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+  <path d="M187 35H197" stroke="#0c8aec" stroke-width="3" stroke-linecap="round"/>
+</svg>
