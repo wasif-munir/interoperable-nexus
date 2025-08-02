@@ -6,6 +6,7 @@ import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
+import LogoConcepts from '@/components/LogoConcepts';
 
 const Index = () => {
   useEffect(() => {
@@ -17,10 +18,7 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <HeroSection />
-        <ServicesSection />
-        <AboutSection />
-        <ContactSection />
+        <LogoConcepts />
       </main>
       <Footer />
     </div>
