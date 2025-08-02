@@ -18,7 +18,10 @@ const Index = () => {
     <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <LogoConcepts />
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
+        <ContactSection />
       </main>
       <Footer />
     </div>
