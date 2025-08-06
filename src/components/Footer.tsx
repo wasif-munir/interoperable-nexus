@@ -70,7 +70,8 @@ const Footer = () => {
             <h3 className="text-lg font-semibold mb-5 text-left">Contact</h3>
             <ul className="space-y-3 text-left">
               <li className="text-gray-400">
-                San Francisco, CA
+                5900 Balcones Drive, STE 100<br />
+                Austin, TX 78731
               </li>
               <li>
                 <a href="mailto:info@connectdev.pro" className="text-gray-400 hover:text-white transition-colors">
