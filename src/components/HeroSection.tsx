@@ -5,7 +5,7 @@ import { ArrowRight, Network, ActivitySquare, Database } from 'lucide-react';
 
 const HeroSection = () => {
   return (
-    <section className="relative pt-28 pb-20 md:pt-36 md:pb-32 overflow-hidden">
+    <section className="relative pt-28 pb-10 md:pt-36 md:pb-16 overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 -right-52 w-96 h-96 bg-brand-blue-200/20 rounded-full blur-3xl"/>

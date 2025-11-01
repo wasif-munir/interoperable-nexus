@@ -75,7 +75,7 @@ const Contact = () => {
       
       <main className="flex-grow pt-20">
         {/* Hero Section */}
-        <section className="pt-20 pb-10 md:pt-28 md:pb-16 bg-gradient-to-b from-gray-50 to-white">
+        <section className="pt-12 pb-8 md:pt-16 md:pb-10 bg-gradient-to-b from-gray-50 to-white">
           <div className="section-container">
             <div className="max-w-3xl mx-auto text-center">
               <div 
@@ -103,7 +103,7 @@ const Contact = () => {
         </section>
         
         {/* Contact Info & Form Section */}
-        <section className="py-16">
+        <section className="py-10 md:py-12">
           <div className="section-container">
             <div className="grid grid-cols-1 lg:grid-cols-3 gap-10">
               {/* Contact Information */}
@@ -329,7 +329,7 @@ const Contact = () => {
         </section>
         
         {/* FAQ Section */}
-        <section className="py-16 bg-gray-50">
+        <section className="py-10 md:py-12 bg-gray-50">
           <div className="section-container">
             <div className="max-w-3xl mx-auto">
               <div className="text-center mb-12">

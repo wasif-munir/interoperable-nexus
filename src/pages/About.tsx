@@ -66,7 +66,7 @@ const About = () => {
       
       <main className="flex-grow pt-20">
         {/* Hero Section */}
-        <section className="pt-20 pb-20 md:pt-28 md:pb-28">
+        <section className="pt-12 pb-10 md:pt-16 md:pb-12">
           <div className="section-container">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <div className="text-left order-2 lg:order-1">
@@ -147,7 +147,7 @@ const About = () => {
         </section>
         
         {/* Our Mission */}
-        <section className="py-20 bg-gray-50">
+        <section className="py-10 md:py-12 bg-gray-50">
           <div className="section-container">
             <div className="max-w-3xl mx-auto text-center mb-16">
               <div 
@@ -187,7 +187,7 @@ const About = () => {
         </section>
         
         {/* Our Approach */}
-        <section className="py-20">
+        <section className="py-10 md:py-12">
           <div className="section-container">
             <div className="text-center max-w-3xl mx-auto mb-16">
               <div 
