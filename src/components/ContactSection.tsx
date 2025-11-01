@@ -36,7 +36,7 @@ const ContactSection = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-32 bg-gray-50">
+    <section id="contact" className="pb-20 md:pb-32 bg-gray-50">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div 

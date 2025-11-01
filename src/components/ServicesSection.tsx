@@ -72,7 +72,7 @@ const ServicesSection = () => {
   ];
 
   return (
-    <section id="services" className="py-20 md:py-32 bg-gray-50">
+    <section id="services" className="pb-20 md:pb-32 bg-gray-50">
       <div className="section-container">
         <div className="text-center max-w-3xl mx-auto mb-16 md:mb-20">
           <div 
