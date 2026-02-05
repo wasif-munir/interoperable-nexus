@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import HeroSection from '@/components/HeroSection';
 import ServicesSection from '@/components/ServicesSection';
@@ -7,25 +6,20 @@ import ContactSection from '@/components/ContactSection';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import LogoConcepts from '@/components/LogoConcepts';
-
 const Index = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "ConnectDev.pro | Healthcare Interoperability Consultancy & Development";
   }, []);
-
-  return (
-    <div className="min-h-screen flex flex-col">
+  return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <HeroSection />
+        <HeroSection className="" />
         <ServicesSection />
         <AboutSection />
         <ContactSection />
       </main>
       <Footer />
-    </div>
-  );
+    </div>;
 };
-
 export default Index;
