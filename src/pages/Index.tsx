@@ -14,9 +14,9 @@ const Index = () => {
   return <div className="min-h-screen flex flex-col">
       <Navbar />
       <main className="flex-grow">
-        <HeroSection className="" />
-        <ServicesSection className="" />
-        <AboutSection className="" />
+        <HeroSection />
+        <ServicesSection />
+        <AboutSection />
         <ContactSection />
       </main>
       <Footer />
