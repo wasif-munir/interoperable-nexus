@@ -28,7 +28,7 @@ const ContactSection = () => {
       setFormData({
         name: '',
         email: '',
-        organization: '',
+        phone: '',
         message: '',
       });
       setIsSubmitting(false);
