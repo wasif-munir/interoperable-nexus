@@ -7,7 +7,7 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    organization: '',
+    phone: '',
     message: '',
   });
   
