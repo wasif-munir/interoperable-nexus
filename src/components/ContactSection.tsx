@@ -7,7 +7,7 @@ const ContactSection = () => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
-    organization: '',
+    phone: '',
     message: '',
   });
   
@@ -28,7 +28,7 @@ const ContactSection = () => {
       setFormData({
         name: '',
         email: '',
-        organization: '',
+        phone: '',
         message: '',
       });
       setIsSubmitting(false);
@@ -145,17 +145,17 @@ const ContactSection = () => {
               </div>
               
               <div className="mb-6 text-left">
-                <label htmlFor="organization" className="block text-sm font-medium text-gray-700 mb-1">
-                  Organization
+                <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-1">
+                  Phone
                 </label>
                 <input
-                  type="text"
-                  id="organization"
-                  name="organization"
-                  value={formData.organization}
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
                   onChange={handleChange}
                   className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brand-blue-300 focus:border-brand-blue-300 transition-all"
-                  placeholder="Your organization"
+                  placeholder="(555) 123-4567"
                 />
               </div>
               
