@@ -12,12 +12,14 @@ const ContactSection = () => {
   });
   
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [isSubmitted, setIsSubmitted] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
 
+/*
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -33,6 +35,39 @@ const ContactSection = () => {
       });
       setIsSubmitting(false);
     }, 1000);
+  };
+*/
+
+const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you! Your message has been sent.");
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          name: '', email: '', phone: '', message: ''
+        });
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -64,7 +99,7 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 lg:grid-cols-5 gap-10 items-start">
           {/* Contact Information */}
           <div 
-            className="lg:col-span-2 animate-fade-in-left opacity-0" 
+            className="lg:col-span-2 animate-fade-in-left opacity-100" 
             style={{ animationDelay: '700ms' }}
           >
             <div className="bg-white rounded-xl p-8 shadow-card">
@@ -96,8 +131,8 @@ const ContactSection = () => {
                     <MapPin className="h-5 w-5 text-brand-blue-500" />
                   </div>
                   <div className="text-left">
-                    <h4 className="font-medium text-gray-900">Location</h4>
-                    <p className="text-gray-600">San Francisco, CA</p>
+                    <h4 className="font-medium text-gray-900">5900 Balcones Drive, STE 100</h4>
+                    <p className="text-gray-600">Austin, TX 78731</p>
                   </div>
                 </div>
               </div>
@@ -106,7 +141,7 @@ const ContactSection = () => {
 
           {/* Contact Form */}
           <div 
-            className="lg:col-span-3 animate-fade-in-right opacity-0" 
+            className="lg:col-span-3 animate-fade-in-right opacity-100" 
             style={{ animationDelay: '900ms' }}
           >
             <form onSubmit={handleSubmit} className="bg-white rounded-xl p-8 shadow-card">

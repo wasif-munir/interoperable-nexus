@@ -50,7 +50,7 @@ const Navbar = () => {
             aria-label="ConnectDev Pro Home"
           >
             <img 
-              src="/logo-transparent.png" 
+              src="/logo-old.svg" 
               alt="ConnectDev.pro" 
               className="h-8 sm:h-10" 
             />

@@ -39,6 +39,7 @@ const Contact = () => {
     }));
   };
 
+  /*
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
@@ -58,6 +59,39 @@ const Contact = () => {
         services: []
       });
     }, 1000);
+  };
+  */
+const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        toast.success("Thank you! Your message has been sent.");
+        setIsSubmitted(true);
+        // Reset form
+        setFormData({
+          name: '', email: '', phone: '', organization: '',
+          subject: '', message: '', services: []
+        });
+      } else {
+        const errorData = await response.json();
+        throw new Error(errorData.message || "Something went wrong.");
+      }
+    } catch (error) {
+      console.error("Submission Error:", error);
+      toast.error("Failed to send message. Please try again later.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const serviceOptions = [
@@ -109,7 +143,7 @@ const Contact = () => {
               {/* Contact Information */}
               <div className="lg:col-span-1">
                 <div 
-                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-card h-full animate-fade-in-left opacity-0" 
+                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-card h-full animate-fade-in-left opacity-100" 
                   style={{ animationDelay: '700ms' }}
                 >
                   <h2 className="text-2xl font-semibold mb-6 text-left">Get in Touch</h2>
@@ -146,13 +180,13 @@ const Contact = () => {
                       <div className="text-left">
                         <h3 className="font-medium text-gray-900 mb-1">Location</h3>
                         <p className="text-gray-600">
-                          San Francisco, CA<br />
-                          United States
+                          5900 Balcones Drive, STE 100<br />
+                          Austin, TX 78731
                         </p>
                       </div>
                     </div>
 
-                    <div className="pt-6 border-t border-gray-100">
+                    <div className="pt-6 border-t border-gray-100 opacity-0">
                       <h3 className="font-medium text-gray-900 mb-3 text-left">Office Hours</h3>
                       <div className="space-y-2 text-left">
                         <p className="text-gray-600">Monday - Friday: 9am - 6pm PST</p>
@@ -166,7 +200,7 @@ const Contact = () => {
               {/* Contact Form */}
               <div className="lg:col-span-2">
                 <div 
-                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-card animate-fade-in-right opacity-0" 
+                  className="bg-white rounded-xl p-8 border border-gray-100 shadow-card animate-fade-in-right opacity-100" 
                   style={{ animationDelay: '900ms' }}
                 >
                   {isSubmitted ? (

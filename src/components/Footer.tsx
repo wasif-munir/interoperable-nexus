@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info */}
           <div>
             <div className="flex items-center mb-5">
-              <img src="/logo-transparent.png" alt="ConnectDev.pro" className="h-8 mr-3" />
+              <img src="/logo-old.svg" alt="ConnectDev.pro" className="h-8 mr-3" />
               <span className="text-xl font-display font-medium">
                 ConnectDev<span className="text-brand-blue-300 font-semibold">.pro</span>
               </span>

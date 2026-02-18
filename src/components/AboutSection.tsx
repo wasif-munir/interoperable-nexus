@@ -20,7 +20,7 @@ const AboutSection = () => {
           {/* Image/Visual Section */}
           <div className="relative">
             <div 
-              className="rounded-xl overflow-hidden shadow-elevated animate-fade-in-left opacity-0" 
+              className="rounded-xl overflow-hidden shadow-elevated animate-fade-in-left opacity-100" 
               style={{ animationDelay: '300ms' }}
             >
               <div className="aspect-w-4 aspect-h-3 bg-gradient-to-br from-brand-blue-400 to-brand-blue-600 p-6 lg:p-10">
