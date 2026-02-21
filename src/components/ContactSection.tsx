@@ -43,7 +43,8 @@ const handleSubmit = async (e: React.FormEvent) => {
     setIsSubmitting(true);
 
     try {
-      const response = await fetch('http://localhost:5000/api/contact', {
+      //const response = await fetch('http://localhost:5000/api/contact', {
+      const response = await fetch('/api/contact', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -116,13 +117,13 @@ const handleSubmit = async (e: React.FormEvent) => {
                   </div>
                 </div>
                 
-                <div className="flex items-start">
+                <div className="flex items-start hidden">
                   <div className="mt-1 bg-brand-blue-50 p-2 rounded-full mr-4">
                     <Phone className="h-5 w-5 text-brand-blue-500" />
                   </div>
                   <div className="text-left">
                     <h4 className="font-medium text-gray-900">Phone</h4>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">(516) 325-1020</p>
                   </div>
                 </div>
                 
