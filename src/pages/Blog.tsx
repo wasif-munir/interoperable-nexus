@@ -54,7 +54,7 @@ const blogPosts = [
     date: 'January 12, 2026',
     readTime: '7 min read',
     category: 'Security',
-    image: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=600&h=400&fit=crop',
+    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop',
   },
   {
     id: 6,
