@@ -7,6 +7,17 @@ import { Calendar, Clock, ArrowRight } from 'lucide-react';
 
 const blogPosts = [
   {
+    id: 0,
+    slug: 'ai-healthcare-interoperability',
+    title: 'AI Is Transforming Healthcare. But Can It Talk to Itself?',
+    excerpt: 'Artificial intelligence is delivering remarkable clinical breakthroughs — yet the US healthcare system remains a patchwork of siloed data that prevents AI from reaching its true potential.',
+    date: 'February 21, 2026',
+    readTime: '8 min read',
+    category: 'Healthcare · AI · Policy',
+    image: 'https://images.unsplash.com/photo-1530497610245-94d3c16cda28?w=600&h=400&fit=crop',
+    hasPage: true,
+  },
+  {
     id: 1,
     slug: 'future-of-healthcare-interoperability',
     title: 'The Future of Healthcare Interoperability: Trends to Watch in 2026',
@@ -119,9 +130,15 @@ const Blog = () => {
                       <Clock className="h-3.5 w-3.5" /> {post.readTime}
                     </span>
                   </div>
-                  <span className="text-brand-blue-500 font-medium text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
-                    Read More <ArrowRight className="h-4 w-4" />
-                  </span>
+                  {(post as any).hasPage ? (
+                    <Link to={`/blog/${post.slug}`} className="text-brand-blue-500 font-medium text-sm flex items-center gap-1 hover:gap-2 transition-all">
+                      Read More <ArrowRight className="h-4 w-4" />
+                    </Link>
+                  ) : (
+                    <span className="text-brand-blue-500 font-medium text-sm flex items-center gap-1 hover:gap-2 transition-all cursor-pointer">
+                      Read More <ArrowRight className="h-4 w-4" />
+                    </span>
+                  )}
                 </div>
               </article>
             ))}
