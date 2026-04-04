@@ -37,6 +37,7 @@ const blogPosts = [
     readTime: '8 min read',
     category: 'FHIR',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 3,
@@ -47,6 +48,7 @@ const blogPosts = [
     readTime: '5 min read',
     category: 'Best Practices',
     image: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 4,
@@ -57,6 +59,7 @@ const blogPosts = [
     readTime: '10 min read',
     category: 'Guides',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 5,
@@ -67,6 +70,7 @@ const blogPosts = [
     readTime: '7 min read',
     category: 'Security',
     image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 6,
@@ -77,6 +81,7 @@ const blogPosts = [
     readTime: '6 min read',
     category: 'Legacy Systems',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
+    hasPage: true,
   },
 ];
 
