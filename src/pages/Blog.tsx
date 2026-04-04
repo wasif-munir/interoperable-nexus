@@ -37,6 +37,7 @@ const blogPosts = [
     readTime: '8 min read',
     category: 'FHIR',
     image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 3,
