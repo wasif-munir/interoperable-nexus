@@ -23,9 +23,10 @@ const blogPosts = [
     title: 'The Future of Healthcare Interoperability: Trends to Watch in 2026',
     excerpt: 'Explore the emerging trends shaping healthcare data exchange, from AI-driven integrations to new FHIR standards that are transforming patient care.',
     date: 'February 15, 2026',
-    readTime: '6 min read',
+    readTime: '10 min read',
     category: 'Industry Trends',
     image: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 2,
