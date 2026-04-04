@@ -59,6 +59,7 @@ const blogPosts = [
     readTime: '10 min read',
     category: 'Guides',
     image: 'https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 5,
