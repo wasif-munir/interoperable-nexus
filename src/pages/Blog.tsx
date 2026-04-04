@@ -81,6 +81,7 @@ const blogPosts = [
     readTime: '6 min read',
     category: 'Legacy Systems',
     image: 'https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=400&fit=crop',
+    hasPage: true,
   },
 ];
 
