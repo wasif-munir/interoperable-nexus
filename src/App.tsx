@@ -11,6 +11,11 @@ import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
 import BlogAiInteroperability from "./pages/BlogAiInteroperability";
 import BlogHealthcareInteroperabilityTrends from "./pages/BlogHealthcareInteroperabilityTrends";
+import BlogFhirR5 from "./pages/BlogFhirR5";
+import BlogReducingIntegrationCosts from "./pages/BlogReducingIntegrationCosts";
+import BlogEhrMigration from "./pages/BlogEhrMigration";
+import BlogApiSecurity from "./pages/BlogApiSecurity";
+import BlogLegacySystemModernization from "./pages/BlogLegacySystemModernization";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
