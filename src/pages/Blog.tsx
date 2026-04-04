@@ -70,6 +70,7 @@ const blogPosts = [
     readTime: '7 min read',
     category: 'Security',
     image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=600&h=400&fit=crop',
+    hasPage: true,
   },
   {
     id: 6,
