@@ -75,7 +75,7 @@ const Portfolio = () => {
                   <div className="p-8 md:p-10 flex flex-col justify-center">
                     <div className="flex items-center gap-2 text-primary mb-3">
                       {project.icon}
-                      <span className="text-xs font-bold uppercase tracking-wider">Healthcare MVP</span>
+                      <span className="text-xs font-bold uppercase tracking-wider">Healthcare MVP - Concept</span>
                     </div>
                     <h2 className="text-xl md:text-2xl font-display font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
                       {project.title}
