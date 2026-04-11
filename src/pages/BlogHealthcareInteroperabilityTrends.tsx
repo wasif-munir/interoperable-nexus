@@ -136,6 +136,13 @@ const stats = [
 ];
 
 const BlogHealthcareInteroperabilityTrends = () => {
+  useSeo({
+    title: 'The Future of Healthcare Interoperability: 6 Trends Shaping 2026',
+    description: 'Trends shaping health data exchange in 2026 — from AI-driven integrations to next-generation FHIR standards transforming how patients and providers connect.',
+    url: '/blog/future-of-healthcare-interoperability',
+    publishedTime: '2026-02-15',
+    tags: ['Industry Trends', 'Interoperability', 'FHIR'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
