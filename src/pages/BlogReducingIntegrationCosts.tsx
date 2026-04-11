@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const BlogReducingIntegrationCosts = () => {
+  useSeo({
+    title: '5 Strategies to Reduce Healthcare Integration Costs',
+    description: 'Practical approaches to streamline your integration projects, minimize technical debt, and maximize ROI on your interoperability investments.',
+    url: '/blog/reducing-integration-costs',
+    publishedTime: '2026-01-28',
+    tags: ['Best Practices', 'Integration', 'Cost Reduction'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

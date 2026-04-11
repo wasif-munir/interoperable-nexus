@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const BlogFhirR5 = () => {
+  useSeo({
+    title: 'FHIR R5: What You Need to Know',
+    description: 'A comprehensive look at what\'s new in FHIR R5, how it differs from R4, and what healthcare organizations should do to prepare for the transition.',
+    url: '/blog/fhir-r5-what-you-need-to-know',
+    publishedTime: '2026-02-05',
+    tags: ['FHIR', 'Standards', 'Interoperability'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
