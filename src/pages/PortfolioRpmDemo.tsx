@@ -24,7 +24,7 @@ const LIGHT = {
 const font = "'DM Sans', system-ui, sans-serif";
 const mono = "'JetBrains Mono', monospace";
 
-type Theme = typeof DARK;
+type Theme = typeof LIGHT;
 
 // ── Theme toggle ─────────────────────────────────────────────────────
 const ThemeToggle = ({ dark, onToggle }: { dark: boolean; onToggle: () => void }) => (
