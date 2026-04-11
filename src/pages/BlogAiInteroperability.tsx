@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const BlogAiInteroperability = () => {
+  useSeo({
+    title: 'AI Is Transforming Healthcare. But Can It Talk to Itself?',
+    description: 'Artificial intelligence is delivering remarkable clinical breakthroughs — yet the US healthcare system remains a patchwork of siloed data that prevents AI from reaching its true potential.',
+    url: '/blog/ai-healthcare-interoperability',
+    publishedTime: '2026-02-21',
+    tags: ['AI', 'Healthcare', 'Interoperability'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

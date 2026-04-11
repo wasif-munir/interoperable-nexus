@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const BlogLegacySystemModernization = () => {
+  useSeo({
+    title: 'Modernizing Legacy Healthcare Systems Without Breaking Everything',
+    description: 'A practical guide to modernizing legacy healthcare systems incrementally while maintaining operational continuity and data integrity.',
+    url: '/blog/legacy-system-modernization',
+    publishedTime: '2026-01-05',
+    tags: ['Legacy Systems', 'Modernization', 'Integration'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

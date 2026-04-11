@@ -4,8 +4,16 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowLeft, Tag } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const BlogApiSecurity = () => {
+  useSeo({
+    title: 'API Security Best Practices for Healthcare Applications',
+    description: 'Learn how to protect sensitive patient data with robust API security measures, from OAuth 2.0 implementation to HIPAA-compliant architectures.',
+    url: '/blog/api-security-healthcare',
+    publishedTime: '2026-01-12',
+    tags: ['Security', 'API', 'HIPAA'],
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />

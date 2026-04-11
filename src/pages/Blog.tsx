@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import { Calendar, Clock, ArrowRight } from 'lucide-react';
+import { useSeo } from '@/hooks/use-seo';
 
 const blogPosts = [
   {
@@ -86,6 +87,12 @@ const blogPosts = [
 ];
 
 const Blog = () => {
+  useSeo({
+    title: 'Blog - Healthcare Interoperability Insights',
+    description: 'Expert insights on healthcare interoperability, FHIR standards, EHR integration, API security, and digital health trends from ConnectDev.pro.',
+    url: '/blog',
+    type: 'website',
+  });
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
