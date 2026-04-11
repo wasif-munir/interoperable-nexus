@@ -9,6 +9,8 @@ import About from "./pages/About";
 import Services from "./pages/Services";
 import Contact from "./pages/Contact";
 import Blog from "./pages/Blog";
+import Portfolio from "./pages/Portfolio";
+import PortfolioRpmDemo from "./pages/PortfolioRpmDemo";
 import BlogAiInteroperability from "./pages/BlogAiInteroperability";
 import BlogHealthcareInteroperabilityTrends from "./pages/BlogHealthcareInteroperabilityTrends";
 import BlogFhirR5 from "./pages/BlogFhirR5";
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/services" element={<Services />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/portfolio/rpm-demo" element={<PortfolioRpmDemo />} />
           <Route path="/blog/ai-healthcare-interoperability" element={<BlogAiInteroperability />} />
           <Route path="/blog/future-of-healthcare-interoperability" element={<BlogHealthcareInteroperabilityTrends />} />
           <Route path="/blog/fhir-r5-what-you-need-to-know" element={<BlogFhirR5 />} />
