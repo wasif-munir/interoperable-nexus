@@ -225,7 +225,7 @@ export default function PortfolioRpmDemo() {
     tags: ["RPM", "Healthcare", "Demo", "MVP"],
   });
 
-  const [dark, setDark]     = useState(true);
+  const [dark, setDark]     = useState(false);
   const [page, setPage]     = useState("overview");
   const [pt, setPt]         = useState<Patient>(PATIENTS[0]);
   const [alerts, setAlerts] = useState([
